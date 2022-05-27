@@ -6,6 +6,32 @@
 </head>
 <body>
 수정이 됬는지 확인중입니다.안되는건가
+<script>
+function lightoff(sw){
+	/* var 변수명;
+	
+	if(조건식){
+		실행문
+	}
+	 */
+	 var pic;
+	 if (sw == 0) {
+		pic = "https://www.w3schools.com/html/pic_bulboff.gif";
+	 
+	 }
+	else {
+		pic = "https://www.w3schools.com/html/pic_bulbon.gif";
+	}
+	 
+	 document.getElementById('img').src = pic;
+	 
+}
+</script>
+
+<button type="button" onclick="lightoff(0)">전등 끄기</button>
+<button type="button" onclick="lightoff(1)">전등 켜기</button>
+
+<p id="demo">궁금하지?</p>
 
 </body>
 </html>
